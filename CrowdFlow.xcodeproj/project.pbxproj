@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65B0299D2B56FC0C00C2ABAA /* CobaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B0299C2B56FC0C00C2ABAA /* CobaViewController.swift */; };
+		65B0299F2B56FCB800C2ABAA /* CobaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B0299E2B56FCB800C2ABAA /* CobaCollectionViewCell.swift */; };
 		65BEB19C2B5677F60012EF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BEB19B2B5677F60012EF9E /* AppDelegate.swift */; };
 		65BEB19E2B5677F60012EF9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BEB19D2B5677F60012EF9E /* SceneDelegate.swift */; };
-		65BEB1A02B5677F60012EF9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BEB19F2B5677F60012EF9E /* ViewController.swift */; };
-		65BEB1A32B5677F60012EF9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BEB1A12B5677F60012EF9E /* Main.storyboard */; };
 		65BEB1A52B5677F70012EF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BEB1A42B5677F70012EF9E /* Assets.xcassets */; };
 		65BEB1A82B5677F70012EF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BEB1A62B5677F70012EF9E /* LaunchScreen.storyboard */; };
 		ADC2AAD648EE5972F4868BE6 /* Pods_CrowdFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DB60FFE39BA7E033A8D8E7 /* Pods_CrowdFlow.framework */; };
@@ -19,11 +19,11 @@
 /* Begin PBXFileReference section */
 		1EF7334102A9671BDE21BE96 /* Pods-CrowdFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdFlow.release.xcconfig"; path = "Target Support Files/Pods-CrowdFlow/Pods-CrowdFlow.release.xcconfig"; sourceTree = "<group>"; };
 		32305CD8E6D4EC6CC605C73B /* Pods-CrowdFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdFlow.debug.xcconfig"; path = "Target Support Files/Pods-CrowdFlow/Pods-CrowdFlow.debug.xcconfig"; sourceTree = "<group>"; };
+		65B0299C2B56FC0C00C2ABAA /* CobaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CobaViewController.swift; sourceTree = "<group>"; };
+		65B0299E2B56FCB800C2ABAA /* CobaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CobaCollectionViewCell.swift; sourceTree = "<group>"; };
 		65BEB1982B5677F60012EF9E /* CrowdFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BEB19B2B5677F60012EF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BEB19D2B5677F60012EF9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65BEB19F2B5677F60012EF9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		65BEB1A22B5677F60012EF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65BEB1A42B5677F70012EF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65BEB1A72B5677F70012EF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65BEB1A92B5677F70012EF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +42,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65B029982B56FB1B00C2ABAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65BEB19B2B5677F60012EF9E /* AppDelegate.swift */,
+				65BEB19D2B5677F60012EF9E /* SceneDelegate.swift */,
+				65BEB1A62B5677F70012EF9E /* LaunchScreen.storyboard */,
+				65BEB1A42B5677F70012EF9E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		65B029992B56FB2100C2ABAA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				65B0299B2B56FB6D00C2ABAA /* New Group */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		65B0299A2B56FB4100C2ABAA /* Experiments */ = {
+			isa = PBXGroup;
+			children = (
+				65B0299C2B56FC0C00C2ABAA /* CobaViewController.swift */,
+				65B0299E2B56FCB800C2ABAA /* CobaCollectionViewCell.swift */,
+			);
+			path = Experiments;
+			sourceTree = "<group>";
+		};
+		65B0299B2B56FB6D00C2ABAA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		65BEB18F2B5677F60012EF9E = {
 			isa = PBXGroup;
 			children = (
@@ -63,12 +98,9 @@
 		65BEB19A2B5677F60012EF9E /* CrowdFlow */ = {
 			isa = PBXGroup;
 			children = (
-				65BEB19B2B5677F60012EF9E /* AppDelegate.swift */,
-				65BEB19D2B5677F60012EF9E /* SceneDelegate.swift */,
-				65BEB19F2B5677F60012EF9E /* ViewController.swift */,
-				65BEB1A12B5677F60012EF9E /* Main.storyboard */,
-				65BEB1A42B5677F70012EF9E /* Assets.xcassets */,
-				65BEB1A62B5677F70012EF9E /* LaunchScreen.storyboard */,
+				65B029982B56FB1B00C2ABAA /* Resources */,
+				65B029992B56FB2100C2ABAA /* Features */,
+				65B0299A2B56FB4100C2ABAA /* Experiments */,
 				65BEB1A92B5677F70012EF9E /* Info.plist */,
 			);
 			path = CrowdFlow;
@@ -80,7 +112,6 @@
 				32305CD8E6D4EC6CC605C73B /* Pods-CrowdFlow.debug.xcconfig */,
 				1EF7334102A9671BDE21BE96 /* Pods-CrowdFlow.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,7 +184,6 @@
 			files = (
 				65BEB1A82B5677F70012EF9E /* LaunchScreen.storyboard in Resources */,
 				65BEB1A52B5677F70012EF9E /* Assets.xcassets in Resources */,
-				65BEB1A32B5677F60012EF9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,23 +219,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65BEB1A02B5677F60012EF9E /* ViewController.swift in Sources */,
 				65BEB19C2B5677F60012EF9E /* AppDelegate.swift in Sources */,
 				65BEB19E2B5677F60012EF9E /* SceneDelegate.swift in Sources */,
+				65B0299D2B56FC0C00C2ABAA /* CobaViewController.swift in Sources */,
+				65B0299F2B56FCB800C2ABAA /* CobaCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		65BEB1A12B5677F60012EF9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65BEB1A22B5677F60012EF9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		65BEB1A62B5677F70012EF9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -349,9 +372,9 @@
 				INFOPLIST_FILE = CrowdFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,9 +401,9 @@
 				INFOPLIST_FILE = CrowdFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
