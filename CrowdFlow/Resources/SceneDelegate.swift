@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        window.rootViewController = CobaViewController()
+        window.rootViewController = OnboardingViewController()
 
         self.window = window
         self.window?.makeKeyAndVisible()

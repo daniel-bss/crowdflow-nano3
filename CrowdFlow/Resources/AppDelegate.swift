@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         
-        window.rootViewController = CobaViewController()
+        window.rootViewController = OnboardingViewController()
         window.makeKeyAndVisible()
         self.window = window
         
