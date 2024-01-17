@@ -17,9 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         
-        window.rootViewController = OnboardingViewController()
-        window.makeKeyAndVisible()
+        if !AppManager.shared.didSeeOnboardingPage {
+            window.rootViewController = UINavigationController(rootViewController: OnboardingViewController())
+        } else {
+            window.rootViewController = UINavigationController(rootViewController: MainPageViewController())
+        }
+        
         self.window = window
+        self.window?.makeKeyAndVisible()
         
         return true
     }

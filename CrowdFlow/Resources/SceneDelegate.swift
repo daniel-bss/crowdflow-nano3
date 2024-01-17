@@ -19,7 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        window.rootViewController = OnboardingViewController()
+        if !AppManager.shared.didSeeOnboardingPage {
+            window.rootViewController = UINavigationController(rootViewController: OnboardingViewController())
+        } else {
+            window.rootViewController = UINavigationController(rootViewController: MainPageViewController())
+        }
 
         self.window = window
         self.window?.makeKeyAndVisible()

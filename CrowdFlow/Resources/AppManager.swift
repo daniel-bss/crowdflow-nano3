@@ -9,10 +9,16 @@ import Foundation
 
 class AppManager {
     
-    private init() {
-        
-    }
+    private init() {}
     
     static let shared = AppManager()
+    
+    var didSeeOnboardingPage: Bool {
+        if let didSeeOnboardingPage = UserDefaults.standard.value(forKey: "didSeeOnboardingPage") as? Bool {
+            return didSeeOnboardingPage
+        } else {
+            return false
+        }
+    }
     
 }

@@ -16,7 +16,7 @@ class OnboardingViewController: UIViewController {
         OnboardingContent(imageString: "onboarding-2", title: "Embark on an Unforgettable Journey with the MRT-J App", subTitle: "Discover a whole new way to explore the vibrant city of Jakarta and create unforgettable memories along the way.")
     ]
     
-    var x: Int = 0
+    var currentPageIdx: Int = 0
     
     let logoStackView: UIStackView = {
         let stackView = UIStackView()
@@ -142,7 +142,6 @@ class OnboardingViewController: UIViewController {
             button.heightAnchor.constraint(equalToConstant: button.height),
         ])
     }
-    
 
 }
 
@@ -167,10 +166,9 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout, UICollec
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        self.x = Int(floorf(Float(scrollView.contentOffset.x) / Float(self.collectionView.width)))
-        pageControl.currentPage = x
+        self.currentPageIdx = Int(floorf(Float(scrollView.contentOffset.x) / Float(self.collectionView.width)))
+        pageControl.currentPage = currentPageIdx
     }
-    
     
 }
 
@@ -178,12 +176,17 @@ extension OnboardingViewController: PrimaryButtonDelegate {
     
     func buttonTapped() {
         
-        if self.x != self.contents.count - 1 {
-            self.x += 1
+        if self.currentPageIdx != self.contents.count - 1 {
+            self.currentPageIdx += 1
             
-            collectionView.setContentOffset(CGPoint(x: CGFloat(self.x) * self.collectionView.width, y: 0), animated: true)
+            collectionView.setContentOffset(CGPoint(x: CGFloat(self.currentPageIdx) * self.collectionView.width, y: 0), animated: true)
+        } else {
+            UserDefaults.standard.setValue(true, forKey: "didSeeOnboardingPage")
+            let vc = MainPageViewController()
+            vc.modalPresentationStyle = .fullScreen
+
+            self.present(vc, animated: true)
         }
     }
-    
     
 }
