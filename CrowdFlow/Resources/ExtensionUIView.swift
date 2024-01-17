@@ -31,7 +31,7 @@ extension UIView {
     }
     
     var bottom: CGFloat {
-        return self.frame.size.height
+        return self.top + self.frame.size.height
     }
     
     func setupShadow() {

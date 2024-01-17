@@ -11,5 +11,7 @@ import UIKit
 extension UIColor {
     
     static let darkBlue = UIColor(red: 43/255.0, green: 75/255.0, blue: 136/255.0, alpha: 1.0)
+    static let darkBlue2 = UIColor(red: 38/255.0, green: 106/255.0, blue: 167/255.0, alpha: 1.0)
+    static let customWhite = UIColor(red: 231/255.0, green: 231/255.0, blue: 241/255.0, alpha: 1.0)
     
 }

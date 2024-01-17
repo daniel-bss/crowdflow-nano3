@@ -11,39 +11,81 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "OnboardingCollectionViewCell"
     
-    let label = UILabel()
+    let imageView = UIImageView()
+    let titleLabel = UILabel()
+    let subTitleLabel = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        contentView.backgroundColor = .blue
+        contentView.backgroundColor = .clear
     }
     
-    public func configure(x: Int) {
-        label.text = String(x)
+    public func configure(content: OnboardingContent) {
+        imageView.image = UIImage(named: content.imageString)
+        titleLabel.text = content.title
+        subTitleLabel.text = content.subTitle
         
-        setupLabel()
+        setupImageView()
+        setupTitleLabel()
+        setupSubTitleLabel()
     }
     
-    private func setupLabel() {
-        contentView.addSubview(label)
+    private func setupImageView() {
+        addSubview(imageView)
         
-        label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
-        label.textColor = .white
-        label.sizeToFit()
+        imageView.frame.size = CGSize(width: 292.85, height: 271)
+        imageView.contentMode = .scaleAspectFill
         
-        label.frame = CGRect(
-            x: contentView.width / 2 - label.width / 2,
-            y: contentView.height / 2 - label.height / 2,
-            width: label.width,
-            height: label.height
+        imageView.frame = CGRect(
+            x: contentView.width / 2 - imageView.width / 2,
+            y: 0,
+            width: imageView.width,
+            height: imageView.height
         )
     }
+
+    private func setupTitleLabel() {
+        addSubview(titleLabel)
+        
+        titleLabel.font = .poppinsSemiBold(size: 17)
+        titleLabel.textColor = .darkBlue
+        titleLabel.textAlignment = .center
+        titleLabel.numberOfLines = 2
+        titleLabel.frame.size = CGSize(width: 292, height: 48)
+        
+        titleLabel.frame = CGRect(
+            x: contentView.width / 2 - titleLabel.width / 2,
+            y: imageView.bottom + 19.38,
+            width: titleLabel.width,
+            height: titleLabel.height
+        )
+    }
+    
+    private func setupSubTitleLabel() {
+        addSubview(subTitleLabel)
+        
+        subTitleLabel.font = .poppinsRegular(size: 14)
+        subTitleLabel.textColor = .darkBlue
+        subTitleLabel.numberOfLines = 3
+        subTitleLabel.textAlignment = .center
+        subTitleLabel.frame.size = CGSize(width: 300, height: 66)
+        
+        subTitleLabel.frame = CGRect(
+            x: contentView.width / 2 - subTitleLabel.width / 2,
+            y: titleLabel.bottom + 16,
+            width: subTitleLabel.width,
+            height: subTitleLabel.height
+        )
+    }
+
     
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        label.text = nil
+        imageView.image = nil
+        titleLabel.text = nil
+        subTitleLabel.text = nil
     }
     
     required init(coder: NSCoder) {

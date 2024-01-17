@@ -32,6 +32,8 @@
 		65B029CD2B57228400C2ABAA /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65B029BA2B57228300C2ABAA /* Poppins-Italic.ttf */; };
 		65B029CE2B57228400C2ABAA /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65B029BB2B57228300C2ABAA /* Poppins-MediumItalic.ttf */; };
 		65B029D02B57229D00C2ABAA /* ExtensionUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029CF2B57229D00C2ABAA /* ExtensionUIFont.swift */; };
+		65B029D42B57D1E400C2ABAA /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029D32B57D1E400C2ABAA /* OnboardingContent.swift */; };
+		65B029D62B57D25400C2ABAA /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029D52B57D25400C2ABAA /* AppManager.swift */; };
 		65BEB19C2B5677F60012EF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BEB19B2B5677F60012EF9E /* AppDelegate.swift */; };
 		65BEB19E2B5677F60012EF9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BEB19D2B5677F60012EF9E /* SceneDelegate.swift */; };
 		65BEB1A52B5677F70012EF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BEB1A42B5677F70012EF9E /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		65B029BA2B57228300C2ABAA /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		65B029BB2B57228300C2ABAA /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		65B029CF2B57229D00C2ABAA /* ExtensionUIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIFont.swift; sourceTree = "<group>"; };
+		65B029D32B57D1E400C2ABAA /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		65B029D52B57D25400C2ABAA /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		65BEB1982B5677F60012EF9E /* CrowdFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BEB19B2B5677F60012EF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BEB19D2B5677F60012EF9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				65B029A32B57173000C2ABAA /* ExtensionUIView.swift */,
 				65B029A62B571DEF00C2ABAA /* ExtensionUIColor.swift */,
 				65B029CF2B57229D00C2ABAA /* ExtensionUIFont.swift */,
+				65B029D52B57D25400C2ABAA /* AppManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -155,10 +160,19 @@
 		65B029D12B57278D00C2ABAA /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				65B029D22B57D1D800C2ABAA /* Models */,
 				65B0299C2B56FC0C00C2ABAA /* OnboardingViewController.swift */,
 				65B0299E2B56FCB800C2ABAA /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		65B029D22B57D1D800C2ABAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65B029D32B57D1E400C2ABAA /* OnboardingContent.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		65BEB18F2B5677F60012EF9E = {
@@ -324,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B029A42B57173000C2ABAA /* ExtensionUIView.swift in Sources */,
+				65B029D62B57D25400C2ABAA /* AppManager.swift in Sources */,
 				65BEB19C2B5677F60012EF9E /* AppDelegate.swift in Sources */,
 				65B029D02B57229D00C2ABAA /* ExtensionUIFont.swift in Sources */,
 				65BEB19E2B5677F60012EF9E /* SceneDelegate.swift in Sources */,
@@ -331,6 +346,7 @@
 				65B0299D2B56FC0C00C2ABAA /* OnboardingViewController.swift in Sources */,
 				65B029A72B571DEF00C2ABAA /* ExtensionUIColor.swift in Sources */,
 				65B0299F2B56FCB800C2ABAA /* OnboardingCollectionViewCell.swift in Sources */,
+				65B029D42B57D1E400C2ABAA /* OnboardingContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
