@@ -45,7 +45,7 @@ class MainSectionCollectionReusableView: UICollectionReusableView {
         bgView.addSubview(icon)
         bgView.addSubview(descriptionLabel)
         
-        bgView.frame = CGRect(x: 0, y: 0, width: width, height: 34)
+        bgView.frame = CGRect(x: -100, y: 0, width: width, height: 34)
         icon.frame = CGRect(x: 16, y: bgView.height / 2 - icon.height / 2, width: icon.width, height: icon.height)
         descriptionLabel.frame = CGRect(x: icon.right + 7, y: bgView.height / 2 - descriptionLabel.height / 2, width: descriptionLabel.width, height: descriptionLabel.height)
     }
@@ -58,7 +58,7 @@ class MainSectionCollectionReusableView: UICollectionReusableView {
         sectionLabel.textColor = .textBlack
         sectionLabel.sizeToFit()
         
-        sectionLabel.frame = CGRect(x: 17, y: bgView.bottom + 20, width: sectionLabel.width, height: sectionLabel.height)
+        sectionLabel.frame = CGRect(x: 1, y: bgView.bottom + 20, width: sectionLabel.width, height: sectionLabel.height)
     }
 
     
