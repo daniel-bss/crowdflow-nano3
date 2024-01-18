@@ -31,11 +31,44 @@ class MainPageViewController: UIViewController {
         return collectionView
     }()
     
+    let locationView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
+        setupLocationView()
         setupCollectionView()
+    }
+    
+    private func setupLocationView() {
+        locationView.backgroundColor = .lightBlue
+        
+        let icon = UIImageView(image: UIImage(systemName: "location.circle.fill"))
+        icon.tintColor = .darkBlue
+        icon.frame.size = CGSize(width: 16, height: 16)
+        
+        let descriptionLabel = UILabel()
+        descriptionLabel.text = "Senayan Station, South Jakarta, Indonesia."
+        descriptionLabel.font = .poppinsRegular(size: 12)
+        descriptionLabel.textColor = .textBlue
+        descriptionLabel.sizeToFit()
+            
+        view.addSubview(locationView)
+        locationView.addSubview(icon)
+        locationView.addSubview(descriptionLabel)
+        
+        locationView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            locationView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            locationView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            locationView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            locationView.heightAnchor.constraint(equalToConstant: 34),
+        ])
+        
+        icon.frame = CGRect(x: 16, y: 34 / 2 - icon.height / 2, width: icon.width, height: icon.height)
+        descriptionLabel.frame = CGRect(x: icon.right + 7, y: icon.frame.midY - descriptionLabel.height / 2, width: descriptionLabel.width, height: descriptionLabel.height)
+        
     }
     
     private func setupCollectionView() {
@@ -52,7 +85,7 @@ class MainPageViewController: UIViewController {
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.topAnchor.constraint(equalTo: locationView.bottomAnchor),
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
@@ -86,7 +119,7 @@ class MainPageViewController: UIViewController {
         section.orthogonalScrollingBehavior = .groupPaging
         section.boundarySupplementaryItems = [
             NSCollectionLayoutBoundarySupplementaryItem(
-                layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(34 + 64)),
+                layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(64)),
                 elementKind: UICollectionView.elementKindSectionHeader,
                 alignment: .top
             )

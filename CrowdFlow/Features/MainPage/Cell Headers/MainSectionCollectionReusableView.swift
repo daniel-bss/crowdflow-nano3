@@ -26,29 +26,10 @@ class MainSectionCollectionReusableView: UICollectionReusableView {
     }
     
     public func configure() {
-        setupBgView()
+//        setupBgView()
         setupSectionLabel()
     }
     
-    public func setupBgView() {
-        let icon = UIImageView(image: UIImage(systemName: "location.circle.fill"))
-        icon.tintColor = .darkBlue
-        icon.frame.size = CGSize(width: 16, height: 16)
-        
-        let descriptionLabel = UILabel()
-        descriptionLabel.text = "Senayan Station, South Jakarta, Indonesia."
-        descriptionLabel.font = .poppinsRegular(size: 12)
-        descriptionLabel.textColor = .textBlue
-        descriptionLabel.sizeToFit()
-        
-        addSubview(bgView)
-        bgView.addSubview(icon)
-        bgView.addSubview(descriptionLabel)
-        
-        bgView.frame = CGRect(x: -100, y: 0, width: width, height: 34)
-        icon.frame = CGRect(x: 16, y: bgView.height / 2 - icon.height / 2, width: icon.width, height: icon.height)
-        descriptionLabel.frame = CGRect(x: icon.right + 7, y: bgView.height / 2 - descriptionLabel.height / 2, width: descriptionLabel.width, height: descriptionLabel.height)
-    }
     
     private func setupSectionLabel() {
         addSubview(sectionLabel)
