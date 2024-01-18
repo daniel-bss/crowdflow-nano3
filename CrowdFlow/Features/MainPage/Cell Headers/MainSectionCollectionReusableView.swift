@@ -26,10 +26,8 @@ class MainSectionCollectionReusableView: UICollectionReusableView {
     }
     
     public func configure() {
-//        setupBgView()
         setupSectionLabel()
     }
-    
     
     private func setupSectionLabel() {
         addSubview(sectionLabel)
@@ -39,7 +37,7 @@ class MainSectionCollectionReusableView: UICollectionReusableView {
         sectionLabel.textColor = .textBlack
         sectionLabel.sizeToFit()
         
-        sectionLabel.frame = CGRect(x: 1, y: bgView.bottom + 20, width: sectionLabel.width, height: sectionLabel.height)
+        sectionLabel.frame = CGRect(x: 17, y: bgView.bottom + 20, width: sectionLabel.width, height: sectionLabel.height)
     }
 
     
