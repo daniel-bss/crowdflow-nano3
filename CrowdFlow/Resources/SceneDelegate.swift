@@ -24,6 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } else {
             window.rootViewController = UINavigationController(rootViewController: MainPageViewController())
         }
+//        window.rootViewController = UINavigationController(rootViewController: CobaViewController())
 
         self.window = window
         self.window?.makeKeyAndVisible()

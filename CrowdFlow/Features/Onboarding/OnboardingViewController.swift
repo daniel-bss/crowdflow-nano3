@@ -77,14 +77,8 @@ class OnboardingViewController: UIViewController {
             logoStackView.heightAnchor.constraint(equalToConstant: 49),
             
             logo1_imageView.leadingAnchor.constraint(equalTo: logoStackView.leadingAnchor),
-            logo1_imageView.centerYAnchor.constraint(equalTo: logoStackView.centerYAnchor),
             logo1_imageView.widthAnchor.constraint(equalToConstant: logo1_imageView.width),
             logo1_imageView.heightAnchor.constraint(equalToConstant: logo1_imageView.height),
-            
-            logo2_imageView.trailingAnchor.constraint(equalTo: logoStackView.trailingAnchor),
-            logo2_imageView.centerYAnchor.constraint(equalTo: logoStackView.centerYAnchor),
-            logo2_imageView.widthAnchor.constraint(equalToConstant: logo2_imageView.width),
-            logo2_imageView.heightAnchor.constraint(equalToConstant: logo2_imageView.height),
         ])
     }
     

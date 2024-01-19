@@ -13,6 +13,9 @@ class AppManager {
     
     static let shared = AppManager()
     
+    let dateNow: Date = Date.now
+    var lastUpdated: Date = Date.now
+    
     var didSeeOnboardingPage: Bool {
         if let didSeeOnboardingPage = UserDefaults.standard.value(forKey: "didSeeOnboardingPage") as? Bool {
             return didSeeOnboardingPage

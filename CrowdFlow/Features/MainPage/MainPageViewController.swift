@@ -8,7 +8,7 @@
 import UIKit
 
 enum MainPageSection {
-    case trainInformation
+    case trainInformation(trainInformations: [TrainInformationData])
     case mainFeatures(iconStrings: [String], textStrings: [String])
     case lifestyle(imageStrings: [String])
     case promotions(imageStrings: [String])
@@ -58,7 +58,14 @@ class MainPageViewController: UIViewController {
     }
     
     private func configureData() {
-        self.sections.append(.trainInformation)
+        self.sections.append(
+            .trainInformation(
+                trainInformations: [
+                    TrainInformationData(finalDestination: "Bundaran HI", platformNumber: 1, startFrom: "Lebak Bulus", arrivingAt: "Blok M"),
+                    TrainInformationData(finalDestination: "Lebak Bulus", platformNumber: 1, startFrom: "Bundaran HI", arrivingAt: "Istora")
+                ]
+            )
+        )
         
         self.sections.append(
             .mainFeatures(
@@ -149,7 +156,7 @@ class MainPageViewController: UIViewController {
                 heightDimension: .absolute(cellHeight)
             )
         )
-        item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 0, trailing: -6)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 0, trailing: -5)
         
         let group = NSCollectionLayoutGroup.horizontal(
             layoutSize: NSCollectionLayoutSize(
@@ -319,6 +326,8 @@ extension MainPageViewController: UICollectionViewDelegateFlowLayout, UICollecti
         let mainPageSection = self.sections[section]
         
         switch mainPageSection {
+        case .trainInformation(let trainInformations):
+            return trainInformations.count
         case .mainFeatures(let iconStrings, _):
             return iconStrings.count
         case .lifestyle(let imageStrings):
@@ -327,8 +336,6 @@ extension MainPageViewController: UICollectionViewDelegateFlowLayout, UICollecti
             return imageStrings.count
         case .newsAndStories(let imageStrings, _, _):
             return imageStrings.count
-        default:
-            return 2
         }
     }
     
@@ -336,6 +343,10 @@ extension MainPageViewController: UICollectionViewDelegateFlowLayout, UICollecti
         let section = self.sections[indexPath.section]
         
         switch section {
+        case .trainInformation(let trainInformations):
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrainInformationCollectionViewCell.identifier, for: indexPath) as! TrainInformationCollectionViewCell
+            cell.configure(trainInformation: trainInformations[indexPath.row])
+            return cell
         case .mainFeatures(let iconStrings, let textStrings):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainFeaturesCollectionViewCell.identifier, for: indexPath) as! MainFeaturesCollectionViewCell
             cell.configure(iconString: iconStrings[indexPath.row], textString: textStrings[indexPath.row])
@@ -355,9 +366,6 @@ extension MainPageViewController: UICollectionViewDelegateFlowLayout, UICollecti
                 titleString: titleStrings[indexPath.row],
                 timeDescString: timeDescStrings[indexPath.row]
             )
-            return cell
-        default:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrainInformationCollectionViewCell.identifier, for: indexPath)
             return cell
         }
     }
