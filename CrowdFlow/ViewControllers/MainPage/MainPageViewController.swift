@@ -52,6 +52,17 @@ class MainPageViewController: UIViewController {
         view.backgroundColor = .white
         overrideUserInterfaceStyle = .light
         
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.backgroundColor = .darkBlue
+        navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
+        navigationController?.navigationBar.compactAppearance = navBarAppearance
+        navigationController?.navigationBar.standardAppearance = navBarAppearance
+        navigationController?.navigationBar.tintColor = .white
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.crop.circle.fill"), style: .plain, target: nil, action: nil)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "navbar-icon"), style: .plain, target: nil, action: nil)
+                                                            
+        
         configureData()
         setupLocationView()
         setupCollectionView()

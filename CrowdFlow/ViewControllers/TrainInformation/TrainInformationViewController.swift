@@ -61,7 +61,10 @@ class TrainInformationViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         overrideUserInterfaceStyle = .light
-        
+        self.navigationItem.hidesBackButton = true
+        navigationItem.title = "Train Details Information"
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left.circle.fill"), style: .plain, target: self, action: #selector(onClickBackButton))
+
         setupMQTT()
         
         configureData()
@@ -85,7 +88,7 @@ class TrainInformationViewController: UIViewController {
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
@@ -111,8 +114,6 @@ class TrainInformationViewController: UIViewController {
             )
         })
         self.viewModel.carCells[0].isTapped = true
-        
-        printing()
     }
     
     func printing() {
@@ -229,6 +230,10 @@ class TrainInformationViewController: UIViewController {
             )
         ]
         return section
+    }
+    
+    @objc func onClickBackButton() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: MQTT SETUPS (NANTI PINDAHIN KE PALING DEPAN?)
