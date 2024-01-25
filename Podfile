@@ -6,5 +6,5 @@ target 'CrowdFlow' do
   use_frameworks!
 
   # Pods for CrowdFlow
-
+  pod 'CocoaMQTT'
 end

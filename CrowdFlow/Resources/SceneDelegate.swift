@@ -24,10 +24,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } else {
             window.rootViewController = UINavigationController(rootViewController: MainPageViewController())
         }
-//        window.rootViewController = UINavigationController(rootViewController: CobaViewController())
+        
+//        window.rootViewController = UINavigationController(rootViewController: Coba2ViewController())
 
         self.window = window
         self.window?.makeKeyAndVisible()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

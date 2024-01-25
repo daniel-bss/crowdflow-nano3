@@ -47,10 +47,21 @@
 		65B029EF2B5B055500C2ABAA /* MantapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029EE2B5B055500C2ABAA /* MantapView.swift */; };
 		65B029F12B5B0DFF00C2ABAA /* CarriageIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029F02B5B0DFF00C2ABAA /* CarriageIconView.swift */; };
 		65B029F32B5B170B00C2ABAA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029F22B5B170B00C2ABAA /* Utils.swift */; };
+		65B029F62B5BC6B500C2ABAA /* TrainInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029F52B5BC6B500C2ABAA /* TrainInformationViewController.swift */; };
+		65B029F92B5BCB6300C2ABAA /* TotalSeatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029F82B5BCB6300C2ABAA /* TotalSeatsCollectionViewCell.swift */; };
+		65B029FB2B5BCB7500C2ABAA /* TrainDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029FA2B5BCB7500C2ABAA /* TrainDetailsCollectionViewCell.swift */; };
+		65B029FD2B5BCB8000C2ABAA /* CarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029FC2B5BCB8000C2ABAA /* CarsCollectionViewCell.swift */; };
+		65B029FF2B5BCC3600C2ABAA /* AvailableSeatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029FE2B5BCC3600C2ABAA /* AvailableSeatsCollectionViewCell.swift */; };
+		65B02A012B5C579400C2ABAA /* TrainCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B02A002B5C579400C2ABAA /* TrainCar.swift */; };
+		65B02A032B5C592300C2ABAA /* TrainInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B02A022B5C592300C2ABAA /* TrainInformationViewModel.swift */; };
+		65B02A052B5F023300C2ABAA /* LargeCarriageIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B02A042B5F023300C2ABAA /* LargeCarriageIconView.swift */; };
+		65B02A072B5F123F00C2ABAA /* Coba2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B02A062B5F123F00C2ABAA /* Coba2ViewController.swift */; };
 		65BEB19C2B5677F60012EF9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BEB19B2B5677F60012EF9E /* AppDelegate.swift */; };
 		65BEB19E2B5677F60012EF9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BEB19D2B5677F60012EF9E /* SceneDelegate.swift */; };
 		65BEB1A52B5677F70012EF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BEB1A42B5677F70012EF9E /* Assets.xcassets */; };
 		65BEB1A82B5677F70012EF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BEB1A62B5677F70012EF9E /* LaunchScreen.storyboard */; };
+		65D10D3F2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D10D3E2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift */; };
+		65D10D412B61B61200320F35 /* MQTTPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D10D402B61B61200320F35 /* MQTTPayload.swift */; };
 		ADC2AAD648EE5972F4868BE6 /* Pods_CrowdFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DB60FFE39BA7E033A8D8E7 /* Pods_CrowdFlow.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,12 +108,23 @@
 		65B029EE2B5B055500C2ABAA /* MantapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MantapView.swift; sourceTree = "<group>"; };
 		65B029F02B5B0DFF00C2ABAA /* CarriageIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarriageIconView.swift; sourceTree = "<group>"; };
 		65B029F22B5B170B00C2ABAA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		65B029F52B5BC6B500C2ABAA /* TrainInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainInformationViewController.swift; sourceTree = "<group>"; };
+		65B029F82B5BCB6300C2ABAA /* TotalSeatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSeatsCollectionViewCell.swift; sourceTree = "<group>"; };
+		65B029FA2B5BCB7500C2ABAA /* TrainDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		65B029FC2B5BCB8000C2ABAA /* CarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewCell.swift; sourceTree = "<group>"; };
+		65B029FE2B5BCC3600C2ABAA /* AvailableSeatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableSeatsCollectionViewCell.swift; sourceTree = "<group>"; };
+		65B02A002B5C579400C2ABAA /* TrainCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCar.swift; sourceTree = "<group>"; };
+		65B02A022B5C592300C2ABAA /* TrainInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainInformationViewModel.swift; sourceTree = "<group>"; };
+		65B02A042B5F023300C2ABAA /* LargeCarriageIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCarriageIconView.swift; sourceTree = "<group>"; };
+		65B02A062B5F123F00C2ABAA /* Coba2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coba2ViewController.swift; sourceTree = "<group>"; };
 		65BEB1982B5677F60012EF9E /* CrowdFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BEB19B2B5677F60012EF9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BEB19D2B5677F60012EF9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		65BEB1A42B5677F70012EF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65BEB1A72B5677F70012EF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65BEB1A92B5677F70012EF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D10D3E2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTrainInformationVC.swift; sourceTree = "<group>"; };
+		65D10D402B61B61200320F35 /* MQTTPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTPayload.swift; sourceTree = "<group>"; };
 		C8DB60FFE39BA7E033A8D8E7 /* Pods_CrowdFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrowdFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,13 +157,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		65B029992B56FB2100C2ABAA /* Features */ = {
+		65B029992B56FB2100C2ABAA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				65B029D12B57278D00C2ABAA /* Onboarding */,
 				65B029D72B58707E00C2ABAA /* MainPage */,
+				65B029F42B5BC69400C2ABAA /* TrainInformation */,
 			);
-			path = Features;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		65B0299A2B56FB4100C2ABAA /* Experiments */ = {
@@ -149,6 +172,7 @@
 			children = (
 				65B029EC2B5B046300C2ABAA /* CobaViewController.swift */,
 				65B029EE2B5B055500C2ABAA /* MantapView.swift */,
+				65B02A062B5F123F00C2ABAA /* Coba2ViewController.swift */,
 			);
 			path = Experiments;
 			sourceTree = "<group>";
@@ -157,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				65B029A12B57153900C2ABAA /* PrimaryButton.swift */,
+				65B029DE2B587BF900C2ABAA /* MainSectionCollectionReusableView.swift */,
+				65B029E02B587C0F00C2ABAA /* OtherSectionCollectionReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,7 +216,6 @@
 		65B029D12B57278D00C2ABAA /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				65B029D22B57D1D800C2ABAA /* Models */,
 				65B0299C2B56FC0C00C2ABAA /* OnboardingViewController.swift */,
 				65B0299E2B56FCB800C2ABAA /* OnboardingCollectionViewCell.swift */,
 			);
@@ -202,6 +227,9 @@
 			children = (
 				65B029D32B57D1E400C2ABAA /* OnboardingContent.swift */,
 				65B029EA2B5A69BA00C2ABAA /* TrainInformationData.swift */,
+				65B02A002B5C579400C2ABAA /* TrainCar.swift */,
+				65B02A022B5C592300C2ABAA /* TrainInformationViewModel.swift */,
+				65D10D402B61B61200320F35 /* MQTTPayload.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,20 +238,11 @@
 			isa = PBXGroup;
 			children = (
 				65B029D82B5870DB00C2ABAA /* MainPageViewController.swift */,
-				65B029DA2B58741400C2ABAA /* Cell Headers */,
 				65B029DB2B58741C00C2ABAA /* Cells */,
 				65B029F02B5B0DFF00C2ABAA /* CarriageIconView.swift */,
+				65B02A042B5F023300C2ABAA /* LargeCarriageIconView.swift */,
 			);
 			path = MainPage;
-			sourceTree = "<group>";
-		};
-		65B029DA2B58741400C2ABAA /* Cell Headers */ = {
-			isa = PBXGroup;
-			children = (
-				65B029DE2B587BF900C2ABAA /* MainSectionCollectionReusableView.swift */,
-				65B029E02B587C0F00C2ABAA /* OtherSectionCollectionReusableView.swift */,
-			);
-			path = "Cell Headers";
 			sourceTree = "<group>";
 		};
 		65B029DB2B58741C00C2ABAA /* Cells */ = {
@@ -234,6 +253,27 @@
 				65B029E42B59ABE900C2ABAA /* LifestyleCollectionViewCell.swift */,
 				65B029E62B59B6CD00C2ABAA /* PromotionsCollectionViewCell.swift */,
 				65B029E82B59BAC600C2ABAA /* NewsAndStoriesCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		65B029F42B5BC69400C2ABAA /* TrainInformation */ = {
+			isa = PBXGroup;
+			children = (
+				65B029F52B5BC6B500C2ABAA /* TrainInformationViewController.swift */,
+				65D10D3E2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift */,
+				65B029F72B5BCB4200C2ABAA /* Cells */,
+			);
+			path = TrainInformation;
+			sourceTree = "<group>";
+		};
+		65B029F72B5BCB4200C2ABAA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				65B029FA2B5BCB7500C2ABAA /* TrainDetailsCollectionViewCell.swift */,
+				65B029F82B5BCB6300C2ABAA /* TotalSeatsCollectionViewCell.swift */,
+				65B029FC2B5BCB8000C2ABAA /* CarsCollectionViewCell.swift */,
+				65B029FE2B5BCC3600C2ABAA /* AvailableSeatsCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -261,7 +301,8 @@
 			children = (
 				65B029982B56FB1B00C2ABAA /* Resources */,
 				65B029A02B57152400C2ABAA /* Views */,
-				65B029992B56FB2100C2ABAA /* Features */,
+				65B029D22B57D1D800C2ABAA /* Models */,
+				65B029992B56FB2100C2ABAA /* ViewControllers */,
 				65B0299A2B56FB4100C2ABAA /* Experiments */,
 				65BEB1A92B5677F70012EF9E /* Info.plist */,
 			);
@@ -296,6 +337,7 @@
 				65BEB1942B5677F60012EF9E /* Sources */,
 				65BEB1952B5677F60012EF9E /* Frameworks */,
 				65BEB1962B5677F60012EF9E /* Resources */,
+				06E69B5524D6B9B8B7BB4EE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -393,6 +435,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		06E69B5524D6B9B8B7BB4EE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrowdFlow/Pods-CrowdFlow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrowdFlow/Pods-CrowdFlow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrowdFlow/Pods-CrowdFlow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -402,13 +461,18 @@
 			files = (
 				65B029E12B587C0F00C2ABAA /* OtherSectionCollectionReusableView.swift in Sources */,
 				65B029EB2B5A69BA00C2ABAA /* TrainInformationData.swift in Sources */,
+				65B029F62B5BC6B500C2ABAA /* TrainInformationViewController.swift in Sources */,
 				65B029A42B57173000C2ABAA /* ExtensionUIView.swift in Sources */,
 				65B029D62B57D25400C2ABAA /* AppManager.swift in Sources */,
 				65BEB19C2B5677F60012EF9E /* AppDelegate.swift in Sources */,
 				65B029D02B57229D00C2ABAA /* ExtensionUIFont.swift in Sources */,
 				65B029EF2B5B055500C2ABAA /* MantapView.swift in Sources */,
+				65B029FB2B5BCB7500C2ABAA /* TrainDetailsCollectionViewCell.swift in Sources */,
+				65B029FF2B5BCC3600C2ABAA /* AvailableSeatsCollectionViewCell.swift in Sources */,
 				65BEB19E2B5677F60012EF9E /* SceneDelegate.swift in Sources */,
 				65B029E32B59ABCB00C2ABAA /* MainFeaturesCollectionViewCell.swift in Sources */,
+				65D10D412B61B61200320F35 /* MQTTPayload.swift in Sources */,
+				65B02A032B5C592300C2ABAA /* TrainInformationViewModel.swift in Sources */,
 				65B029E92B59BAC600C2ABAA /* NewsAndStoriesCollectionViewCell.swift in Sources */,
 				65B029DF2B587BF900C2ABAA /* MainSectionCollectionReusableView.swift in Sources */,
 				65B029A22B57153900C2ABAA /* PrimaryButton.swift in Sources */,
@@ -417,12 +481,18 @@
 				65B029DD2B58755400C2ABAA /* TrainInformationCollectionViewCell.swift in Sources */,
 				65B029F32B5B170B00C2ABAA /* Utils.swift in Sources */,
 				65B0299D2B56FC0C00C2ABAA /* OnboardingViewController.swift in Sources */,
+				65B02A052B5F023300C2ABAA /* LargeCarriageIconView.swift in Sources */,
 				65B029A72B571DEF00C2ABAA /* ExtensionUIColor.swift in Sources */,
 				65B029E72B59B6CD00C2ABAA /* PromotionsCollectionViewCell.swift in Sources */,
 				65B029E52B59ABE900C2ABAA /* LifestyleCollectionViewCell.swift in Sources */,
 				65B029D92B5870DB00C2ABAA /* MainPageViewController.swift in Sources */,
+				65B02A072B5F123F00C2ABAA /* Coba2ViewController.swift in Sources */,
 				65B0299F2B56FCB800C2ABAA /* OnboardingCollectionViewCell.swift in Sources */,
+				65D10D3F2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift in Sources */,
+				65B029F92B5BCB6300C2ABAA /* TotalSeatsCollectionViewCell.swift in Sources */,
+				65B02A012B5C579400C2ABAA /* TrainCar.swift in Sources */,
 				65B029D42B57D1E400C2ABAA /* OnboardingContent.swift in Sources */,
+				65B029FD2B5BCB8000C2ABAA /* CarsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +547,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -540,7 +610,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -574,7 +644,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,9 +652,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielniels.CrowdFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -603,7 +675,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,9 +683,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielniels.CrowdFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
