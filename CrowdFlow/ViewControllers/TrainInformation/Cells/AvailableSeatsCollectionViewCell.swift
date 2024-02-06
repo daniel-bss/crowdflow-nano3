@@ -40,11 +40,13 @@ class AvailableSeatsCollectionViewCell: UICollectionViewCell {
     }
     
     public func configure(carViewModel: CarCell) {
-        regularSeatLabel.text = "\(carViewModel.regularSeat) Seats"
+        regularSeatLabel.text = String(format: NSLocalizedString("num_of_seats", comment: ""), carViewModel.regularSeat)
         regularSeatLabel.sizeToFit()
-        prioritySeatLabel.text = "\(carViewModel.prioritySeat) Seats"
+        
+        prioritySeatLabel.text = String(format: NSLocalizedString("num_of_seats", comment: ""), carViewModel.prioritySeat)
         prioritySeatLabel.sizeToFit()
-        bicycleAreaLabel.text = "\(carViewModel.bicycleArea) Seats"
+        
+        bicycleAreaLabel.text = String(format: NSLocalizedString("num_of_seats", comment: ""), carViewModel.bicycleArea)
         bicycleAreaLabel.sizeToFit()
         
         if let stackView {

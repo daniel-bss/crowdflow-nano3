@@ -54,6 +54,7 @@ class MainPageViewController: UIViewController {
         
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.backgroundColor = .darkBlue
+        
         navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
         navigationController?.navigationBar.compactAppearance = navBarAppearance
         navigationController?.navigationBar.standardAppearance = navBarAppearance

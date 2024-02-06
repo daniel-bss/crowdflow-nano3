@@ -83,7 +83,7 @@ extension Coba2ViewController: CocoaMQTT5Delegate {
     
     func mqtt5(_ mqtt5: CocoaMQTT5, didConnectAck ack: CocoaMQTTCONNACKReasonCode, connAckData: MqttDecodeConnAck?) {
         let subscriptions : [MqttSubscription] = [
-            MqttSubscription(topic: "dummy-data/nc3c6s2"),
+            MqttSubscription(topic: "ultrasonic/nc3c6s2"),
         ]
         
         mqtt.subscribe(subscriptions)
@@ -102,19 +102,7 @@ extension Coba2ViewController: CocoaMQTT5Delegate {
     }
     
     func mqtt5(_ mqtt5: CocoaMQTT5, didReceiveMessage message: CocoaMQTT5Message, id: UInt16, publishData: MqttDecodePublish?) {
-        let string: String = message.string!
-        
-        let data = string.data(using: .utf8, allowLossyConversion: false)
-
-        let payload = try! JSONDecoder().decode(MQTTPayload.self, from: data!) as! MQTTPayload
-        print(payload.car1)
-        print(payload.car3)
-        print(payload.car4)
-        print(payload.car5)
-        print(payload.car6)
-        print()
-        
-        
+        print("topic \(message.topic): \(message.string), \(message.payload)")
         
         
     }

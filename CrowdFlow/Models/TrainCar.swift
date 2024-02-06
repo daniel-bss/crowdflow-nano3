@@ -16,6 +16,12 @@ struct TrainCar {
     
     init(id: Int) {
         self.id = id
+        
+        if id == 2 {
+            self.regularSeat = 2
+            self.prioritySeat = 0
+            self.bicycleArea = 0
+        }
     }
     
 }

@@ -30,7 +30,7 @@ class TotalSeatsCollectionViewCell: UICollectionViewCell {
         totalSeats += carViewModel.prioritySeat
         totalSeats += carViewModel.bicycleArea
         
-        label.text = "\(totalSeats) Seats are Available at Car \(carViewModel.id)"
+        label.text = String(format: NSLocalizedString("total_num_of_seats", comment: ""), totalSeats) + " available at Car \(carViewModel.id)"
         
         setupIconView()
         setupLabel()

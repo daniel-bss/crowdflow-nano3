@@ -62,13 +62,23 @@ class TrainInformationViewController: UIViewController {
         view.backgroundColor = .white
         overrideUserInterfaceStyle = .light
         self.navigationItem.hidesBackButton = true
-        navigationItem.title = "Train Details Information"
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left.circle.fill"), style: .plain, target: self, action: #selector(onClickBackButton))
-
+        
+        setupNavbar()
         setupMQTT()
         
         configureData()
         setupCollectionView()
+    }
+    
+    private func setupNavbar() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left.circle.fill"), style: .plain, target: self, action: #selector(onClickBackButton))
+        
+        let label = UILabel()
+        label.text = "Train Details Information"
+        label.font = .poppinsSemiBold(size: 17)
+        label.textColor = .white
+        
+        navigationItem.titleView = label
     }
     
     private func setupCollectionView() {
@@ -236,7 +246,7 @@ class TrainInformationViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    // MARK: MQTT SETUPS (NANTI PINDAHIN KE PALING DEPAN?)
+    // MARK: MQTT SETUPS
     
     deinit {
         NotificationCenter.default.removeObserver(self, name: UIScene.didActivateNotification, object: nil)
