@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65AC04442B72D1DE00F88CC7 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 65AC04432B72D1DE00F88CC7 /* Localizable.stringsdict */; };
 		65B0299D2B56FC0C00C2ABAA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B0299C2B56FC0C00C2ABAA /* OnboardingViewController.swift */; };
 		65B0299F2B56FCB800C2ABAA /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B0299E2B56FCB800C2ABAA /* OnboardingCollectionViewCell.swift */; };
 		65B029A22B57153900C2ABAA /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B029A12B57153900C2ABAA /* PrimaryButton.swift */; };
@@ -60,7 +61,7 @@
 		65BEB19E2B5677F60012EF9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BEB19D2B5677F60012EF9E /* SceneDelegate.swift */; };
 		65BEB1A52B5677F70012EF9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BEB1A42B5677F70012EF9E /* Assets.xcassets */; };
 		65BEB1A82B5677F70012EF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BEB1A62B5677F70012EF9E /* LaunchScreen.storyboard */; };
-		65D10D3F2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D10D3E2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift */; };
+		65D10D3F2B61AC7F00320F35 /* ExtensionTrainInformationVC+MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D10D3E2B61AC7F00320F35 /* ExtensionTrainInformationVC+MQTT.swift */; };
 		65D10D412B61B61200320F35 /* MQTTPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D10D402B61B61200320F35 /* MQTTPayload.swift */; };
 		ADC2AAD648EE5972F4868BE6 /* Pods_CrowdFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DB60FFE39BA7E033A8D8E7 /* Pods_CrowdFlow.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		1EF7334102A9671BDE21BE96 /* Pods-CrowdFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdFlow.release.xcconfig"; path = "Target Support Files/Pods-CrowdFlow/Pods-CrowdFlow.release.xcconfig"; sourceTree = "<group>"; };
 		32305CD8E6D4EC6CC605C73B /* Pods-CrowdFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdFlow.debug.xcconfig"; path = "Target Support Files/Pods-CrowdFlow/Pods-CrowdFlow.debug.xcconfig"; sourceTree = "<group>"; };
+		65AC04432B72D1DE00F88CC7 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		65B0299C2B56FC0C00C2ABAA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		65B0299E2B56FCB800C2ABAA /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		65B029A12B57153900C2ABAA /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -123,7 +125,7 @@
 		65BEB1A42B5677F70012EF9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65BEB1A72B5677F70012EF9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65BEB1A92B5677F70012EF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65D10D3E2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTrainInformationVC.swift; sourceTree = "<group>"; };
+		65D10D3E2B61AC7F00320F35 /* ExtensionTrainInformationVC+MQTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionTrainInformationVC+MQTT.swift"; sourceTree = "<group>"; };
 		65D10D402B61B61200320F35 /* MQTTPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTPayload.swift; sourceTree = "<group>"; };
 		C8DB60FFE39BA7E033A8D8E7 /* Pods_CrowdFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrowdFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -261,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				65B029F52B5BC6B500C2ABAA /* TrainInformationViewController.swift */,
-				65D10D3E2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift */,
+				65D10D3E2B61AC7F00320F35 /* ExtensionTrainInformationVC+MQTT.swift */,
 				65B029F72B5BCB4200C2ABAA /* Cells */,
 			);
 			path = TrainInformation;
@@ -305,6 +307,7 @@
 				65B029992B56FB2100C2ABAA /* ViewControllers */,
 				65B0299A2B56FB4100C2ABAA /* Experiments */,
 				65BEB1A92B5677F70012EF9E /* Info.plist */,
+				65AC04432B72D1DE00F88CC7 /* Localizable.stringsdict */,
 			);
 			path = CrowdFlow;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				65B029C02B57228400C2ABAA /* Poppins-Light.ttf in Resources */,
 				65B029CA2B57228400C2ABAA /* Poppins-Black.ttf in Resources */,
 				65B029C82B57228400C2ABAA /* Poppins-LightItalic.ttf in Resources */,
+				65AC04442B72D1DE00F88CC7 /* Localizable.stringsdict in Resources */,
 				65B029CB2B57228400C2ABAA /* Poppins-Thin.ttf in Resources */,
 				65B029BC2B57228400C2ABAA /* Poppins-ExtraLight.ttf in Resources */,
 				65B029CC2B57228400C2ABAA /* Poppins-SemiBold.ttf in Resources */,
@@ -488,7 +492,7 @@
 				65B029D92B5870DB00C2ABAA /* MainPageViewController.swift in Sources */,
 				65B02A072B5F123F00C2ABAA /* Coba2ViewController.swift in Sources */,
 				65B0299F2B56FCB800C2ABAA /* OnboardingCollectionViewCell.swift in Sources */,
-				65D10D3F2B61AC7F00320F35 /* ExtensionTrainInformationVC.swift in Sources */,
+				65D10D3F2B61AC7F00320F35 /* ExtensionTrainInformationVC+MQTT.swift in Sources */,
 				65B029F92B5BCB6300C2ABAA /* TotalSeatsCollectionViewCell.swift in Sources */,
 				65B02A012B5C579400C2ABAA /* TrainCar.swift in Sources */,
 				65B029D42B57D1E400C2ABAA /* OnboardingContent.swift in Sources */,
