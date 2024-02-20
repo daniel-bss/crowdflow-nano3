@@ -176,7 +176,8 @@ extension OnboardingViewController: PrimaryButtonDelegate {
             collectionView.setContentOffset(CGPoint(x: CGFloat(self.currentPageIdx) * self.collectionView.width, y: 0), animated: true)
         } else {
             UserDefaults.standard.setValue(true, forKey: "didSeeOnboardingPage")
-            let vc = MainPageViewController()
+            
+            let vc = UINavigationController(rootViewController: MainPageViewController())
             vc.modalPresentationStyle = .fullScreen
 
             self.present(vc, animated: true)

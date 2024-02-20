@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = UINavigationController(rootViewController: MainPageViewController())
         }
         
-//        window.rootViewController = UINavigationController(rootViewController: Coba2ViewController())
+//        window.rootViewController = UINavigationController(rootViewController: OnboardingViewController())
 
         self.window = window
         self.window?.makeKeyAndVisible()
